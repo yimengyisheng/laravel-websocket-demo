@@ -66,10 +66,10 @@ map $http_upgrade $connection_upgrade {
 - 自行维护$fd和userId的映射关系接口
 ### 服务端推送信息
 - 路由示例
-``
+````
 \Illuminate\Support\Facades\Route::get('/test','TestController@test');//websocket服务
 \Illuminate\Support\Facades\Route::get('/push','TestController@push');//业务接口
-``
+````
 - 代码示例
 ````
     //websocket服务中的发送消息到指定客户端
@@ -103,7 +103,8 @@ map $http_upgrade $connection_upgrade {
     }
 ````
 ### 其他注意事项
-连接时长配置
-
+连接时长配置(客户端可以在该时间周期内发送心跳数据)
+````$xslt
     proxy_read_timeout 600s;//十分钟保持客户端服务端连接。
+````
 
