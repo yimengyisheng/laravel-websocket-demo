@@ -109,9 +109,9 @@ map $http_upgrade $connection_upgrade {
     }
 ````
 ### 其他注意事项
-连接时长配置(客户端可以在该时间周期内发送心跳数据)
+连接保持时长配置(客户端可以在该时间周期内发送心跳数据)
 ````$xslt
-    proxy_read_timeout 600s;//十分钟保持客户端服务端连接。
+    proxy_read_timeout 600s;//十分钟保持客户端服务端连接（nginx配置文件）。
 ````
 ### 客户端示例代码   file.html
 ````$xslt
