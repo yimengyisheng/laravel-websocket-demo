@@ -1,11 +1,16 @@
 ## laravel7 结合 hhxsv5/laravel-s websocket客户端和服务端通信
 
-## 环境信息
-- 安装laravel7
+## 安装配置及启动
+- 安装配置laravel7
 - 安装hhxsv5/laravel-s包
 ```$xslt
 composer require hhxsv5/laravel-s
 ```
+
+- 启动websocket服务可参考 [hhxsv5/laravel-s安装配置文档](https://github.com/hhxsv5/laravel-s/blob/master/README-CN.md)
+````
+php bin/laravels start
+````
 ### 适用业务举例
 - 导入导出实时通知等
 - 实时数据
@@ -62,6 +67,7 @@ map $http_upgrade $connection_upgrade {
     }
 ````
 ### laravel-s拦截器配置
+
 - 客户端连接携带身份信息如前后端分离项目可以携带token等,拦截器根据token信息解析用户id，websocket连接($fd)绑定身份信息($userId)。
 - 自行维护$fd和userId的映射关系接口
 ### 服务端推送信息
@@ -106,5 +112,61 @@ map $http_upgrade $connection_upgrade {
 连接时长配置(客户端可以在该时间周期内发送心跳数据)
 ````$xslt
     proxy_read_timeout 600s;//十分钟保持客户端服务端连接。
+````
+### 客户端示例代码   file.html
+````$xslt
+<!DOCTYPE HTML>
+<html>
+   <head>
+   <meta charset="utf-8">
+   <title>websocket</title>
+    
+      <script type="text/javascript">
+         function WebSocketTest()
+         {
+            if ("WebSocket" in window)
+            {
+               console.log("您的浏览器支持 WebSocket!");
+               
+               // 打开一个 web socket
+               var ws = new WebSocket("ws://www.laravel7.com/ws?id=4");
+                
+               ws.onopen = function()
+               {
+                  // Web Socket 已连接上，使用 send() 方法发送数据
+                  ws.send("发送数据");
+                  console.log("客户端数据发送中...");
+               };
+                
+               ws.onmessage = function (evt) 
+               { 
+                  var received_msg = evt.data;
+                  console.log(received_msg);
+
+               };
+               ws.onclose = function()
+               { 
+                  // 关闭 websocket
+                  console.log("连接已关闭..."); 
+               };
+            }
+            
+            else
+            {
+               // 浏览器不支持 WebSocket
+               console.log("您的浏览器不支持 WebSocket!");
+            }
+         }
+      </script>
+        
+   </head>
+   <body>
+   
+      <div id="sse">
+         <a href="javascript:WebSocketTest()">test</a>
+      </div>
+      
+   </body>
+</html>
 ````
 
