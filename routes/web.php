@@ -11,4 +11,5 @@
 |
 */
 
-\Illuminate\Support\Facades\Route::get('/test','TestController@test');
+\Illuminate\Support\Facades\Route::get('/test','TestController@test');//websocket服务
+\Illuminate\Support\Facades\Route::get('/push','TestController@push');//业务接口
