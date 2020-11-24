@@ -113,7 +113,7 @@ map $http_upgrade $connection_upgrade {
 ````$xslt
     proxy_read_timeout 600s;//十分钟保持客户端服务端连接（nginx配置文件）。
 ````
-### 客户端示例代码   file.html
+### 客户端示例代码   websocket.html
 ````$xslt
 <!DOCTYPE HTML>
 <html>
