@@ -13,3 +13,8 @@
 
 \Illuminate\Support\Facades\Route::get('/test','TestController@test');//websocket服务
 \Illuminate\Support\Facades\Route::get('/push','TestController@push');//业务接口
+\Illuminate\Support\Facades\Route::get('/dis','TestController@disRole');//业务接口
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

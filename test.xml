@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <taskName><![CDATA[测试扫描3-2020-12-21 11:47:22]]></taskName>
+    <createTime>2020-12-21 11:47:22</createTime>
+    <startTime>2020-12-21 11:47:26</startTime>
+    <endTime>2020-12-21 12:33:30</endTime>
+    <host>
+        <hostIp>10.210.136.133</hostIp>
+        <startTime>2020-12-21 11:47:26</startTime>
+        <endTime>2020-12-21 11:54:56</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[F5 Networks BIGIP ]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList>
+            <item>
+                <portValue>161</portValue>
+                <portType>tcp</portType>
+                <protocolName>snmp</protocolName>
+                <serverVersion/>
+            </item>
+        </portList>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-2003-01428</id>
+                <name><![CDATA[源路由包漏洞]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[防火墙测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[您的主机能够接受松散的源路由IP包，攻击者能够在简单配置的IP过滤系统中利用这个漏洞来实现另外一个漏洞的攻击。]]></desc>
+                <solve><![CDATA[在主机或者环绕路由防火墙上丢弃源路由包。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04835</id>
+                <name><![CDATA[支持 TCP/IP 时间戳]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[杂项测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[远程主机实现由RFC1323所定义的TCP时间戳，这个功能的一个副作用是：远程主机正常运行的时间有时可以计算。请参见：http://www.ietf.org/rfc/rfc1323.txt]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00510</id>
+                <name><![CDATA[路由跟踪测试]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[以下是到主机10.210.136.133的traceroute结果: 192.168.58.110192.168.58.125?10.210.254.25010.210.136.133]]></msg>
+                <desc><![CDATA[    Traceroute（路由跟踪）是一个常用的网络测试命令。用来检测主机到目标主机间的路由情况。Traceroute通过发送小的数据包到目的设备直到其返回，来测量其需要多长时间。可以帮助网络管理员确定网络结构和网络故障。    本测试尝试获得漏洞扫描器与该主机之间的路由。]]></desc>
+                <solve><![CDATA[漏洞扫描器需要这个信息来帮助扫描取得更准确的结果。但是这不是一个漏洞。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[漏洞扫描器不能确定这个主机上的操作系统. 它有可能是:F5 Networks BIGIP 1500 或 F5 Networks BIGIP 2400它的指纹有别于已知的特征 6 points.如果你知道这个操作系统的类型，并且方便的话请将以下的信息告诉我们（邮件:admin@testest.com）：:1:1:1:255:0:0:1:0:0:1:0:0:1:8:255:1:1:1:1:1:1:1:1:1:64:5792:MSTNW:0:1:1]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>203.175.156.68</hostIp>
+        <startTime>2020-12-21 11:47:26</startTime>
+        <endTime>2020-12-21 12:12:41</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[Linux Kernel 2.6]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList>
+            <item>
+                <portValue>80</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 403 ForbiddenServer: Apache-Coyote/1.1Content-Type: text/html;charset=utf-8Content-]]></serverVersion>
+            </item>
+            <item>
+                <portValue>8899</portValue>
+                <portType>tcp</portType>
+                <protocolName>ssh</protocolName>
+                <serverVersion><![CDATA[SSH-2.0-OpenSSH_8.3]]></serverVersion>
+            </item>
+        </portList>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-1999-00241</id>
+                <name><![CDATA[icmp 时间戳请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[ICMP（Internet Control Message Protocol，Internet控制信息协议）为IP 堆栈发送简单的信息。由于ICMP过于简单，所以它对于网络的安全性有比较大的负面影响，攻击者可以利用ICMP进行网络扫描、拒绝服务（DoS）攻击和隧道攻击等各种危害网络安全的活动。最常用的ICMP应用就是通常被称为Ping的操作。攻击者可以利用ICMP协议来探测主机地址是否存活。远程主机响应一个ICMP时间戳请求，就允许攻击者知道你机器的时间，这可以帮助攻击者攻击那些基于主机时间的协议。]]></desc>
+                <solve><![CDATA[1 过滤掉ICMP时间戳请求（类型13)和向外的ICMP时间戳应答（类型14）。2 重新配置远程主机，使主机不应答ICMP时间戳请求。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04829</id>
+                <name><![CDATA[超文本传输协议(HTTP)的信息]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>80</port>
+                <msg><![CDATA[协议版本  : HTTP/1.1SSL : noKeep-Alive : no允许选项  : (Not implemented)Headers :  Server: Apache-Coyote/1.1  Content-Type: text/html;charset=utf-8  Content-Language: zh-CN  Content-Length: 589  Date: Sun, 20 Dec 2020 20:14:08 GMT  ]]></msg>
+                <desc><![CDATA[这个脚本主要获取了远程HTTP协议的信息：版本信息、HTTP是否保持活动状态、HTTP管道启动情况等等。这个脚本只是信息的获取并不涉及任何安全方面的问题。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04835</id>
+                <name><![CDATA[支持 TCP/IP 时间戳]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[杂项测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[远程主机实现由RFC1323所定义的TCP时间戳，这个功能的一个副作用是：远程主机正常运行的时间有时可以计算。请参见：http://www.ietf.org/rfc/rfc1323.txt]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-04859</id>
+                <name><![CDATA[被允许的 HTTP 方法（每个目录）]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>80</port>
+                <msg><![CDATA[Based on tests of each method :   - HTTP methods GET HEAD OPTIONS POST are allowed on :     /]]></msg>
+                <desc><![CDATA[通过调用 OPTIONS 方法，可能能确定每个目录中所允许的 HTTP 方法。 - 如果在扫描策略中启用“完全测试”或启用“Web 应用程序测试”； - 在每个目录中有多个不同的 HTTP 方法，如果接收到 400, 403, 405, 或 501 的返回值，则会被认为它们不受支持；]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2013-07725</id>
+                <name><![CDATA[SSH 算法和语言支持检测]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>8899</port>
+                <msg><![CDATA[扫描系统与服务器协商以下加密算法: 服务器支持以下选项kex_algorithms :   curve25519-sha256  curve25519-sha256@libssh.org  diffie-hellman-group-exchange-sha256  diffie-hellman-group14-sha256  diffie-hellman-group16-sha512  diffie-hellman-group18-sha512  ecdh-sha2-nistp256  ecdh-sha2-nistp384  ecdh-sha2-nistp521服务器支持以下选项server_host_key_algorithms :   ecdsa-sha2-nistp256  rsa-sha2-256  rsa-sha2-512  ssh-ed25519  ssh-rsa服务器支持以下选项encryption_algorithms_client_to_server :   aes128-ctr  aes128-gcm@openssh.com  aes192-ctr  aes256-ctr  aes256-gcm@openssh.com  chacha20-poly1305@openssh.com服务器支持以下选项encryption_algorithms_server_to_client :   aes128-ctr  aes128-gcm@openssh.com  aes192-ctr  aes256-ctr  aes256-gcm@openssh.com  chacha20-poly1305@openssh.com服务器支持以下选项mac_algorithms_client_to_server :   hmac-sha1  hmac-sha1-etm@openssh.com  hmac-sha2-256  hmac-sha2-256-etm@openssh.com  hmac-sha2-512  hmac-sha2-512-etm@openssh.com  umac-128-etm@openssh.com  umac-128@openssh.com  umac-64-etm@openssh.com  umac-64@openssh.com服务器支持以下选项mac_algorithms_server_to_client :   hmac-sha1  hmac-sha1-etm@openssh.com  hmac-sha2-256  hmac-sha2-256-etm@openssh.com  hmac-sha2-512  hmac-sha2-512-etm@openssh.com  umac-128-etm@openssh.com  umac-128@openssh.com  umac-64-etm@openssh.com  umac-64@openssh.com服务器支持以下选项compression_algorithms_client_to_server :   none  zlib@openssh.com服务器支持以下选项compression_algorithms_server_to_client :   none  zlib@openssh.com]]></msg>
+                <desc><![CDATA[这个脚本检测支持远程服务加密通信算法。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00234</id>
+                <name><![CDATA[HTTP服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>80</port>
+                <msg><![CDATA[远程的web服务器类型是:Apache-Coyote/1.1'ServerTokens'标志是ProductOnly并不会阻止Apache显示它的类型。]]></msg>
+                <desc><![CDATA[    HTTP是超文本传输协议（Hyper Text Transfer Protocol）的英文简写。它是互联网上应用最为广泛的一种网络传输协议。用于传输超文本标记语言（HTML--Hyper Text Markup Language）写的文件，也就是我们通常说的网页。    HTTP服务器（WEB服务器）通过HTTP向客户端提供网页服务。    通过连接服务器来检测HTTP服务器的类型和版本。这些信息被称为服务器旗帜（Flag)。    服务器旗帜向攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助攻击者的攻击。    在配置服务器的时候，版本号和类型应尽可能的去除。]]></desc>
+                <solve><![CDATA[1.最终解决方法:  用更通用的信息来标示服务器，不要让攻击者轻易的得到你的服务器的类型和版本。  *对于Apache服务器，确认删除了通用logos apache.gif。  *对于Win2000的IIS服务，按照如下步骤进行设置：1.管理工具－>Internet服务管理器－>停止Internet服务；2.删除%SystemRoot%\\system32\\dllcache\\w3scv.dll文件；3.用UltraEdit或类似的二进制编辑器将%SystemRoot%\\system32\\INETSRV\\W3svc.dll打开；4.查找Micro字样，把原来的Microsoft－IIS/5.0（后面的那个）改成你希望的值，如改为9.0；注意：如果您已经更改过该版本号，则该漏洞可以忽略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>80</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>8899</port>
+                <msg><![CDATA[一个 SSH 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00485</id>
+                <name><![CDATA[SSH 服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>8899</port>
+                <msg><![CDATA[远程的 SSH 版本为 : SSH-2.0-OpenSSH_8.3]]></msg>
+                <desc><![CDATA[通过连接服务器来检测SSH服务器的类型和版本。登录标志给潜在的攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助了攻击者的攻击。在配置服务器的时候，版本号和类型应尽可能的忽略。]]></desc>
+                <solve><![CDATA[1.临时解决办法：  这不是一个漏洞，扫描器需要此信息使扫描更加准确。2.最终解决办法：a 将登陆标记改为更通用的值，如welcome。b 过滤掉不信任的主机，不允话它们访问这个端口。防止来自外部的攻击，建议堵塞SSH使用的TCP 22号端口。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00510</id>
+                <name><![CDATA[路由跟踪测试]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[以下是到主机203.175.156.68的traceroute结果: 192.168.58.110192.168.58.12510.210.253.13410.255.253.9010.255.253.22192.168.246.29?10.246.248.10203.175.156.68]]></msg>
+                <desc><![CDATA[    Traceroute（路由跟踪）是一个常用的网络测试命令。用来检测主机到目标主机间的路由情况。Traceroute通过发送小的数据包到目的设备直到其返回，来测量其需要多长时间。可以帮助网络管理员确定网络结构和网络故障。    本测试尝试获得漏洞扫描器与该主机之间的路由。]]></desc>
+                <solve><![CDATA[漏洞扫描器需要这个信息来帮助扫描取得更准确的结果。但是这不是一个漏洞。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00584</id>
+                <name><![CDATA[检查类Unix系统Sendmail服务状态]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[类UNIX测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[远程主机Sendmail服务服务未安装。]]></msg>
+                <desc><![CDATA[该脚本用来检查类Unix系统Sendmail服务状态：启用、禁用、未安装。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，配置信息的收集只是为了使扫描的结果更加准确；但请确认扫描的结果是否符合贵公司的安全策略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00943</id>
+                <name><![CDATA[检测SSH 协议版本支持情况]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>8899</port>
+                <msg><![CDATA[远程 SSH 程序支持以下 SSH 协议版本：  - 1.99  - 2.0]]></msg>
+                <desc><![CDATA[SSH安全shell，向远程用户提供了一个安全的shell。目前SSH存在多个协议版本。本测试检测远程的 SSH 服务所支持的SSH 协议版本。关于这个漏洞的更多信息请参考：http://www.securityspace.com/smysecure/catid.html?id=10881]]></desc>
+                <solve><![CDATA[尽管这并不表示存在一个漏洞，但我们建议用户随时保持自己的SSH服务器版本最新。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[该主机正在运行的是Linux Kernel 2.6]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>203.175.156.67</hostIp>
+        <startTime>2020-12-21 11:47:26</startTime>
+        <endTime>2020-12-21 12:08:53</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[Linux Kernel 2.6]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList>
+            <item>
+                <portValue>111</portValue>
+                <portType>tcp</portType>
+                <protocolName>portmapper</protocolName>
+                <serverVersion><![CDATA[portmap sunrpc rpcbind]]></serverVersion>
+            </item>
+            <item>
+                <portValue>1947</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 403 ForbiddenServer: HASP LM/16.00Date: Mon, 21 Dec 2020 03:46:36 GMTContent-Type: ]]></serverVersion>
+            </item>
+            <item>
+                <portValue>5801</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 200 OKServer: RealVNC/4.0Date: Mon, 21 Dec 2020 03:46:43 GMTLast-Modified: Mon, 21 ]]></serverVersion>
+            </item>
+            <item>
+                <portValue>5901</portValue>
+                <portType>tcp</portType>
+                <protocolName>vnc</protocolName>
+                <serverVersion/>
+            </item>
+            <item>
+                <portValue>6001</portValue>
+                <portType>tcp</portType>
+                <protocolName>X11</protocolName>
+                <serverVersion><![CDATA[11.0]]></serverVersion>
+            </item>
+            <item>
+                <portValue>7676</portValue>
+                <portType>tcp</portType>
+                <protocolName>imqbrokerd</protocolName>
+                <serverVersion/>
+            </item>
+            <item>
+                <portValue>8080</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 404 Server: Apache-Coyote/1.1Content-Length: 0Date: Mon, 21 Dec 2020 03:46:51 GMT]]></serverVersion>
+            </item>
+            <item>
+                <portValue>8083</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 404 Server: Apache-Coyote/1.1Content-Length: 0Date: Mon, 21 Dec 2020 03:46:51 GMT]]></serverVersion>
+            </item>
+            <item>
+                <portValue>8086</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 404 Server: Apache-Coyote/1.1Content-Length: 0Date: Mon, 21 Dec 2020 03:46:51 GMT]]></serverVersion>
+            </item>
+            <item>
+                <portValue>8088</portValue>
+                <portType>tcp</portType>
+                <protocolName>radan-http</protocolName>
+                <serverVersion/>
+            </item>
+            <item>
+                <portValue>8899</portValue>
+                <portType>tcp</portType>
+                <protocolName>ssh</protocolName>
+                <serverVersion><![CDATA[SSH-2.0-OpenSSH_8.3]]></serverVersion>
+            </item>
+        </portList>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-2000-00520</id>
+                <name><![CDATA[VNC检测]]></name>
+                <levelChs>中风险</levelChs>
+                <level>3</level>
+                <familyName><![CDATA[木马病毒测试]]></familyName>
+                <cve_id/>
+                <port>5901</port>
+                <msg><![CDATA[远程VNC服务支持的协议最高版本是: RFB 003.003]]></msg>
+                <desc><![CDATA[检测到远程的服务器运行了VNC。VNC是一种远程控制软件，允许把终端显示在远程主机上。它在方便管理员远程操作主机的同时，也为黑客攻击提供了一条途径。]]></desc>
+                <solve><![CDATA[如果不是确实需要，请停止VNC服务。如果一定需要使用VNC，那么在防火墙上设置允许连接的主机，并设置足够复杂的密码。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00241</id>
+                <name><![CDATA[icmp 时间戳请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[ICMP（Internet Control Message Protocol，Internet控制信息协议）为IP 堆栈发送简单的信息。由于ICMP过于简单，所以它对于网络的安全性有比较大的负面影响，攻击者可以利用ICMP进行网络扫描、拒绝服务（DoS）攻击和隧道攻击等各种危害网络安全的活动。最常用的ICMP应用就是通常被称为Ping的操作。攻击者可以利用ICMP协议来探测主机地址是否存活。远程主机响应一个ICMP时间戳请求，就允许攻击者知道你机器的时间，这可以帮助攻击者攻击那些基于主机时间的协议。]]></desc>
+                <solve><![CDATA[1 过滤掉ICMP时间戳请求（类型13)和向外的ICMP时间戳应答（类型14）。2 重新配置远程主机，使主机不应答ICMP时间戳请求。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00403</id>
+                <name><![CDATA[Portmapper服务正在运行]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[RPC测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0632]]></cve_id>
+                <port>111</port>
+                <msg/>
+                <desc><![CDATA[远程过程调用（RPC）允许一台计算机上的程序去执行另一台计算机上的程序。由于RPC服务程序通常并未进行良好的错误检查或者输入验证，可能存在一些潜在的安全问题。漏洞扫描器检测到Portmapper RPC服务已经启动。如果你不需要该项服务则关闭该程序，以防止未来可能造成的安全漏洞。]]></desc>
+                <solve><![CDATA[1.建议如果不需要该服务则禁用此项服务2.安装最新的漏洞补丁。对于不同系统可以参考一下网址：For Solaris Software Patches:http://sunsolve.sun.com For IBM AIX Software Patches:http://www.ibm.com/support/ushttp://techsupport.services.ibm.com/server/fixes For SGI Software Patches:http://support.sgi.com For Compaq (Digital Unix) Software Patches:http://www.compaq.com/support For Linux Software Patches:http://www.redhat.com/apps/support/erratahttp://www.debian.org./security     For Windows Patches:http://www.microsoft.com/china3.及时关注厂商最新的漏洞发布4.在防火墙或者对外的路由器限制对外的RPC端口]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00559</id>
+                <name><![CDATA[X服务器正在运行]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[杂项测试]]></familyName>
+                <cve_id/>
+                <port>6001</port>
+                <msg><![CDATA[这个X服务器不允许任意的客户端连接，但我们还是建议你过滤到X服务端口的连接，因为攻击者还是有可能发送恶意的数据导致你的X会话变慢，甚至崩溃。这个X服务的版本是: 11.0以下是我们接收到的消息: No protocol specified风险等级: 低]]></msg>
+                <desc><![CDATA[X11是一个客户机-服务器的协议。基本上来说，服务器端管理屏幕，客户端连接服务器并发送诸如画一个窗口、菜单之类的请求，服务器会向客户发送如鼠标双击、按键等消息。X服务器的不恰当配置可以接受来自任何地方的连接，这使得攻击者可以连接到X服务器从而记录用户的击键，这很可能包含很多关于帐号密码的信息。为了解决这个问题，请使用xauth或者MIT cookies。]]></desc>
+                <solve><![CDATA[这并不是一个漏洞，但我们需要这个信息以便为其他的安全检测提供足够的信息。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04829</id>
+                <name><![CDATA[超文本传输协议(HTTP)的信息]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>1947</port>
+                <msg><![CDATA[协议版本  : HTTP/1.1SSL : noKeep-Alive : no允许选项  : (Not implemented)Headers :  Server: HASP LM/16.00  Date: Mon, 21 Dec 2020 03:52:05 GMT  Content-Type: text/html  Content-Length: 137  ]]></msg>
+                <desc><![CDATA[这个脚本主要获取了远程HTTP协议的信息：版本信息、HTTP是否保持活动状态、HTTP管道启动情况等等。这个脚本只是信息的获取并不涉及任何安全方面的问题。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04829</id>
+                <name><![CDATA[超文本传输协议(HTTP)的信息]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>5801</port>
+                <msg><![CDATA[协议版本  : HTTP/1.1SSL : noKeep-Alive : no允许选项  : (Not implemented)Headers :  Server: RealVNC/4.0  Date: Mon, 21 Dec 2020 03:52:05 GMT  Last-Modified: Mon, 21 Dec 2020 03:52:05 GMT  Connection: close  Content-Type: text/html  ]]></msg>
+                <desc><![CDATA[这个脚本主要获取了远程HTTP协议的信息：版本信息、HTTP是否保持活动状态、HTTP管道启动情况等等。这个脚本只是信息的获取并不涉及任何安全方面的问题。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04829</id>
+                <name><![CDATA[超文本传输协议(HTTP)的信息]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8080</port>
+                <msg><![CDATA[协议版本  : HTTP/1.1SSL : noKeep-Alive : no允许选项  : GET, HEAD, POST, PUT, DELETE, OPTIONSHeaders :  Server: Apache-Coyote/1.1  Content-Length: 0  Date: Mon, 21 Dec 2020 03:52:25 GMT  ]]></msg>
+                <desc><![CDATA[这个脚本主要获取了远程HTTP协议的信息：版本信息、HTTP是否保持活动状态、HTTP管道启动情况等等。这个脚本只是信息的获取并不涉及任何安全方面的问题。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04829</id>
+                <name><![CDATA[超文本传输协议(HTTP)的信息]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8083</port>
+                <msg><![CDATA[协议版本  : HTTP/1.1SSL : noKeep-Alive : no允许选项  : GET, HEAD, POST, PUT, DELETE, OPTIONSHeaders :  Server: Apache-Coyote/1.1  Content-Length: 0  Date: Mon, 21 Dec 2020 03:52:46 GMT  ]]></msg>
+                <desc><![CDATA[这个脚本主要获取了远程HTTP协议的信息：版本信息、HTTP是否保持活动状态、HTTP管道启动情况等等。这个脚本只是信息的获取并不涉及任何安全方面的问题。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04829</id>
+                <name><![CDATA[超文本传输协议(HTTP)的信息]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8086</port>
+                <msg><![CDATA[协议版本  : HTTP/1.1SSL : noKeep-Alive : no允许选项  : GET, HEAD, POST, PUT, DELETE, OPTIONSHeaders :  Server: Apache-Coyote/1.1  Content-Length: 0  Date: Mon, 21 Dec 2020 03:53:06 GMT  ]]></msg>
+                <desc><![CDATA[这个脚本主要获取了远程HTTP协议的信息：版本信息、HTTP是否保持活动状态、HTTP管道启动情况等等。这个脚本只是信息的获取并不涉及任何安全方面的问题。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04835</id>
+                <name><![CDATA[支持 TCP/IP 时间戳]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[杂项测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[远程主机实现由RFC1323所定义的TCP时间戳，这个功能的一个副作用是：远程主机正常运行的时间有时可以计算。请参见：http://www.ietf.org/rfc/rfc1323.txt]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2011-04849</id>
+                <name><![CDATA[portmapper 服务正在运行]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[RPC测试]]></familyName>
+                <cve_id/>
+                <port>111</port>
+                <msg/>
+                <desc><![CDATA[这个脚本检测出portmapper服务正在运行，它允许某人通过在远程主机发送多重查找请求或转储请求来获得每一个运行RPC服务端口的数量。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-04859</id>
+                <name><![CDATA[被允许的 HTTP 方法（每个目录）]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>5801</port>
+                <msg><![CDATA[Based on tests of each method :   - HTTP methods GET HEAD are allowed on :     /]]></msg>
+                <desc><![CDATA[通过调用 OPTIONS 方法，可能能确定每个目录中所允许的 HTTP 方法。 - 如果在扫描策略中启用“完全测试”或启用“Web 应用程序测试”； - 在每个目录中有多个不同的 HTTP 方法，如果接收到 400, 403, 405, 或 501 的返回值，则会被认为它们不受支持；]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-04859</id>
+                <name><![CDATA[被允许的 HTTP 方法（每个目录）]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8080</port>
+                <msg><![CDATA[Based on tests of each method :   - HTTP methods ACL BASELINE-CONTROL BCOPY BDELETE BMOVE BPROPFIND     BPROPPATCH CHECKIN CHECKOUT CONNECT COPY DEBUG DELETE GET HEAD     INDEX LABEL LOCK MERGE MKACTIVITY MKCOL MKWORKSPACE MOVE NOTIFY     OPTIONS ORDERPATCH PATCH POLL POST PROPFIND PROPPATCH PUT REPORT     RPC_IN_DATA RPC_OUT_DATA SEARCH SUBSCRIBE TRACE UNCHECKOUT UNLOCK     UNSUBSCRIBE UPDATE VERSION-CONTROL X-MS-ENUMATTS are allowed on :     /  - Invalid/unknown HTTP methods are allowed on :    /]]></msg>
+                <desc><![CDATA[通过调用 OPTIONS 方法，可能能确定每个目录中所允许的 HTTP 方法。 - 如果在扫描策略中启用“完全测试”或启用“Web 应用程序测试”； - 在每个目录中有多个不同的 HTTP 方法，如果接收到 400, 403, 405, 或 501 的返回值，则会被认为它们不受支持；]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-04859</id>
+                <name><![CDATA[被允许的 HTTP 方法（每个目录）]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8083</port>
+                <msg><![CDATA[Based on tests of each method :   - HTTP methods ACL BASELINE-CONTROL BCOPY BDELETE BMOVE BPROPFIND     BPROPPATCH CHECKIN CHECKOUT CONNECT COPY DEBUG DELETE GET HEAD     INDEX LABEL LOCK MERGE MKACTIVITY MKCOL MKWORKSPACE MOVE NOTIFY     OPTIONS ORDERPATCH PATCH POLL POST PROPFIND PROPPATCH PUT REPORT     RPC_IN_DATA RPC_OUT_DATA SEARCH SUBSCRIBE TRACE UNCHECKOUT UNLOCK     UNSUBSCRIBE UPDATE VERSION-CONTROL X-MS-ENUMATTS are allowed on :     /  - Invalid/unknown HTTP methods are allowed on :    /]]></msg>
+                <desc><![CDATA[通过调用 OPTIONS 方法，可能能确定每个目录中所允许的 HTTP 方法。 - 如果在扫描策略中启用“完全测试”或启用“Web 应用程序测试”； - 在每个目录中有多个不同的 HTTP 方法，如果接收到 400, 403, 405, 或 501 的返回值，则会被认为它们不受支持；]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-04859</id>
+                <name><![CDATA[被允许的 HTTP 方法（每个目录）]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8086</port>
+                <msg><![CDATA[Based on tests of each method :   - HTTP methods ACL BASELINE-CONTROL BCOPY BDELETE BMOVE BPROPFIND     BPROPPATCH CHECKIN CHECKOUT CONNECT COPY DEBUG DELETE GET HEAD     INDEX LABEL LOCK MERGE MKACTIVITY MKCOL MKWORKSPACE MOVE NOTIFY     OPTIONS ORDERPATCH PATCH POLL POST PROPFIND PROPPATCH PUT REPORT     RPC_IN_DATA RPC_OUT_DATA SEARCH SUBSCRIBE TRACE UNCHECKOUT UNLOCK     UNSUBSCRIBE UPDATE VERSION-CONTROL X-MS-ENUMATTS are allowed on :     /  - Invalid/unknown HTTP methods are allowed on :    /]]></msg>
+                <desc><![CDATA[通过调用 OPTIONS 方法，可能能确定每个目录中所允许的 HTTP 方法。 - 如果在扫描策略中启用“完全测试”或启用“Web 应用程序测试”； - 在每个目录中有多个不同的 HTTP 方法，如果接收到 400, 403, 405, 或 501 的返回值，则会被认为它们不受支持；]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2013-07725</id>
+                <name><![CDATA[SSH 算法和语言支持检测]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>8899</port>
+                <msg><![CDATA[扫描系统与服务器协商以下加密算法: 服务器支持以下选项kex_algorithms :   curve25519-sha256  curve25519-sha256@libssh.org  diffie-hellman-group-exchange-sha256  diffie-hellman-group14-sha256  diffie-hellman-group16-sha512  diffie-hellman-group18-sha512  ecdh-sha2-nistp256  ecdh-sha2-nistp384  ecdh-sha2-nistp521服务器支持以下选项server_host_key_algorithms :   ecdsa-sha2-nistp256  rsa-sha2-256  rsa-sha2-512  ssh-ed25519  ssh-rsa服务器支持以下选项encryption_algorithms_client_to_server :   aes128-ctr  aes128-gcm@openssh.com  aes192-ctr  aes256-ctr  aes256-gcm@openssh.com  chacha20-poly1305@openssh.com服务器支持以下选项encryption_algorithms_server_to_client :   aes128-ctr  aes128-gcm@openssh.com  aes192-ctr  aes256-ctr  aes256-gcm@openssh.com  chacha20-poly1305@openssh.com服务器支持以下选项mac_algorithms_client_to_server :   hmac-sha1  hmac-sha1-etm@openssh.com  hmac-sha2-256  hmac-sha2-256-etm@openssh.com  hmac-sha2-512  hmac-sha2-512-etm@openssh.com  umac-128-etm@openssh.com  umac-128@openssh.com  umac-64-etm@openssh.com  umac-64@openssh.com服务器支持以下选项mac_algorithms_server_to_client :   hmac-sha1  hmac-sha1-etm@openssh.com  hmac-sha2-256  hmac-sha2-256-etm@openssh.com  hmac-sha2-512  hmac-sha2-512-etm@openssh.com  umac-128-etm@openssh.com  umac-128@openssh.com  umac-64-etm@openssh.com  umac-64@openssh.com服务器支持以下选项compression_algorithms_client_to_server :   none  zlib@openssh.com服务器支持以下选项compression_algorithms_server_to_client :   none  zlib@openssh.com]]></msg>
+                <desc><![CDATA[这个脚本检测支持远程服务加密通信算法。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2004-10273</id>
+                <name><![CDATA[服务检测:3 ASCII数字代码响应]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>7676</port>
+                <msg><![CDATA[A Message Queue broker is listening on this port.]]></msg>
+                <desc><![CDATA[  该脚本用来作为系统服务检测脚本的补充，它尝试识别服务，返回3 ASCII数字代码。]]></desc>
+                <solve><![CDATA[  这本身并非一个漏洞，信息的收集为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00234</id>
+                <name><![CDATA[HTTP服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>1947</port>
+                <msg><![CDATA[远程的web服务器类型是:HASP LM/16.00]]></msg>
+                <desc><![CDATA[    HTTP是超文本传输协议（Hyper Text Transfer Protocol）的英文简写。它是互联网上应用最为广泛的一种网络传输协议。用于传输超文本标记语言（HTML--Hyper Text Markup Language）写的文件，也就是我们通常说的网页。    HTTP服务器（WEB服务器）通过HTTP向客户端提供网页服务。    通过连接服务器来检测HTTP服务器的类型和版本。这些信息被称为服务器旗帜（Flag)。    服务器旗帜向攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助攻击者的攻击。    在配置服务器的时候，版本号和类型应尽可能的去除。]]></desc>
+                <solve><![CDATA[1.最终解决方法:  用更通用的信息来标示服务器，不要让攻击者轻易的得到你的服务器的类型和版本。  *对于Apache服务器，确认删除了通用logos apache.gif。  *对于Win2000的IIS服务，按照如下步骤进行设置：1.管理工具－>Internet服务管理器－>停止Internet服务；2.删除%SystemRoot%\\system32\\dllcache\\w3scv.dll文件；3.用UltraEdit或类似的二进制编辑器将%SystemRoot%\\system32\\INETSRV\\W3svc.dll打开；4.查找Micro字样，把原来的Microsoft－IIS/5.0（后面的那个）改成你希望的值，如改为9.0；注意：如果您已经更改过该版本号，则该漏洞可以忽略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00234</id>
+                <name><![CDATA[HTTP服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>5801</port>
+                <msg><![CDATA[远程的web服务器类型是:RealVNC/4.0]]></msg>
+                <desc><![CDATA[    HTTP是超文本传输协议（Hyper Text Transfer Protocol）的英文简写。它是互联网上应用最为广泛的一种网络传输协议。用于传输超文本标记语言（HTML--Hyper Text Markup Language）写的文件，也就是我们通常说的网页。    HTTP服务器（WEB服务器）通过HTTP向客户端提供网页服务。    通过连接服务器来检测HTTP服务器的类型和版本。这些信息被称为服务器旗帜（Flag)。    服务器旗帜向攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助攻击者的攻击。    在配置服务器的时候，版本号和类型应尽可能的去除。]]></desc>
+                <solve><![CDATA[1.最终解决方法:  用更通用的信息来标示服务器，不要让攻击者轻易的得到你的服务器的类型和版本。  *对于Apache服务器，确认删除了通用logos apache.gif。  *对于Win2000的IIS服务，按照如下步骤进行设置：1.管理工具－>Internet服务管理器－>停止Internet服务；2.删除%SystemRoot%\\system32\\dllcache\\w3scv.dll文件；3.用UltraEdit或类似的二进制编辑器将%SystemRoot%\\system32\\INETSRV\\W3svc.dll打开；4.查找Micro字样，把原来的Microsoft－IIS/5.0（后面的那个）改成你希望的值，如改为9.0；注意：如果您已经更改过该版本号，则该漏洞可以忽略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00234</id>
+                <name><![CDATA[HTTP服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8080</port>
+                <msg><![CDATA[远程的web服务器类型是:Apache-Coyote/1.1'ServerTokens'标志是ProductOnly并不会阻止Apache显示它的类型。]]></msg>
+                <desc><![CDATA[    HTTP是超文本传输协议（Hyper Text Transfer Protocol）的英文简写。它是互联网上应用最为广泛的一种网络传输协议。用于传输超文本标记语言（HTML--Hyper Text Markup Language）写的文件，也就是我们通常说的网页。    HTTP服务器（WEB服务器）通过HTTP向客户端提供网页服务。    通过连接服务器来检测HTTP服务器的类型和版本。这些信息被称为服务器旗帜（Flag)。    服务器旗帜向攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助攻击者的攻击。    在配置服务器的时候，版本号和类型应尽可能的去除。]]></desc>
+                <solve><![CDATA[1.最终解决方法:  用更通用的信息来标示服务器，不要让攻击者轻易的得到你的服务器的类型和版本。  *对于Apache服务器，确认删除了通用logos apache.gif。  *对于Win2000的IIS服务，按照如下步骤进行设置：1.管理工具－>Internet服务管理器－>停止Internet服务；2.删除%SystemRoot%\\system32\\dllcache\\w3scv.dll文件；3.用UltraEdit或类似的二进制编辑器将%SystemRoot%\\system32\\INETSRV\\W3svc.dll打开；4.查找Micro字样，把原来的Microsoft－IIS/5.0（后面的那个）改成你希望的值，如改为9.0；注意：如果您已经更改过该版本号，则该漏洞可以忽略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00234</id>
+                <name><![CDATA[HTTP服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8083</port>
+                <msg><![CDATA[远程的web服务器类型是:Apache-Coyote/1.1'ServerTokens'标志是ProductOnly并不会阻止Apache显示它的类型。]]></msg>
+                <desc><![CDATA[    HTTP是超文本传输协议（Hyper Text Transfer Protocol）的英文简写。它是互联网上应用最为广泛的一种网络传输协议。用于传输超文本标记语言（HTML--Hyper Text Markup Language）写的文件，也就是我们通常说的网页。    HTTP服务器（WEB服务器）通过HTTP向客户端提供网页服务。    通过连接服务器来检测HTTP服务器的类型和版本。这些信息被称为服务器旗帜（Flag)。    服务器旗帜向攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助攻击者的攻击。    在配置服务器的时候，版本号和类型应尽可能的去除。]]></desc>
+                <solve><![CDATA[1.最终解决方法:  用更通用的信息来标示服务器，不要让攻击者轻易的得到你的服务器的类型和版本。  *对于Apache服务器，确认删除了通用logos apache.gif。  *对于Win2000的IIS服务，按照如下步骤进行设置：1.管理工具－>Internet服务管理器－>停止Internet服务；2.删除%SystemRoot%\\system32\\dllcache\\w3scv.dll文件；3.用UltraEdit或类似的二进制编辑器将%SystemRoot%\\system32\\INETSRV\\W3svc.dll打开；4.查找Micro字样，把原来的Microsoft－IIS/5.0（后面的那个）改成你希望的值，如改为9.0；注意：如果您已经更改过该版本号，则该漏洞可以忽略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00234</id>
+                <name><![CDATA[HTTP服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8086</port>
+                <msg><![CDATA[远程的web服务器类型是:Apache-Coyote/1.1'ServerTokens'标志是ProductOnly并不会阻止Apache显示它的类型。]]></msg>
+                <desc><![CDATA[    HTTP是超文本传输协议（Hyper Text Transfer Protocol）的英文简写。它是互联网上应用最为广泛的一种网络传输协议。用于传输超文本标记语言（HTML--Hyper Text Markup Language）写的文件，也就是我们通常说的网页。    HTTP服务器（WEB服务器）通过HTTP向客户端提供网页服务。    通过连接服务器来检测HTTP服务器的类型和版本。这些信息被称为服务器旗帜（Flag)。    服务器旗帜向攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助攻击者的攻击。    在配置服务器的时候，版本号和类型应尽可能的去除。]]></desc>
+                <solve><![CDATA[1.最终解决方法:  用更通用的信息来标示服务器，不要让攻击者轻易的得到你的服务器的类型和版本。  *对于Apache服务器，确认删除了通用logos apache.gif。  *对于Win2000的IIS服务，按照如下步骤进行设置：1.管理工具－>Internet服务管理器－>停止Internet服务；2.删除%SystemRoot%\\system32\\dllcache\\w3scv.dll文件；3.用UltraEdit或类似的二进制编辑器将%SystemRoot%\\system32\\INETSRV\\W3svc.dll打开；4.查找Micro字样，把原来的Microsoft－IIS/5.0（后面的那个）改成你希望的值，如改为9.0；注意：如果您已经更改过该版本号，则该漏洞可以忽略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>1947</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>5801</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>5901</port>
+                <msg><![CDATA[一个 vnc 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>8080</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>8083</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>8086</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>8899</port>
+                <msg><![CDATA[一个 SSH 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00415</id>
+                <name><![CDATA[statd服务检测]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[RPC测试]]></familyName>
+                <cve_id><![CDATA[CVE-1999-0018 CVE-1999-0019 CVE-1999-0493 CVE-2004-1014]]></cve_id>
+                <port>960 udp</port>
+                <msg/>
+                <desc><![CDATA[Statd RPC 服务已经启动。该服务程序一直存在安全缺陷，所以在使用其之前请务必考虑周全。请注意，有关该程序的安全缺陷目前并为被测试，其有可能是一个误报，但还是建议用户关闭该服务。攻击者可以利用rpc.statd漏洞，在目标主机上打开对端口1524监听的进程。任何人在互联网的任何地方均可以无需帐号口令telnet该主机1524端口，并立即取得超级用户权限。由于本地用户及远程用户在输入参数时不充分的边界检查。当执行一个特别的rpc规则时，它可能重写statd程序的内部堆栈空间（当程序执行时，存储被用到信息的地方）。通过细心的给statd程序设计输入参数，当用户运行statd时，入侵者能迫使statd执行任意命令。]]></desc>
+                <solve><![CDATA[建议禁用此项服务，编辑你的/etc目录下的inetd.conf文件，将以下内容 root /usr/lib/netsvc/rstat/rpc.rstatd rpc.rstatd 注释(前面加#号)。关于这个漏洞的更多信息请参考： http://www.cert.org/advisories/CA-99-05-statd-automountd.html]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00485</id>
+                <name><![CDATA[SSH 服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>8899</port>
+                <msg><![CDATA[远程的 SSH 版本为 : SSH-2.0-OpenSSH_8.3]]></msg>
+                <desc><![CDATA[通过连接服务器来检测SSH服务器的类型和版本。登录标志给潜在的攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助了攻击者的攻击。在配置服务器的时候，版本号和类型应尽可能的忽略。]]></desc>
+                <solve><![CDATA[1.临时解决办法：  这不是一个漏洞，扫描器需要此信息使扫描更加准确。2.最终解决办法：a 将登陆标记改为更通用的值，如welcome。b 过滤掉不信任的主机，不允话它们访问这个端口。防止来自外部的攻击，建议堵塞SSH使用的TCP 22号端口。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00510</id>
+                <name><![CDATA[路由跟踪测试]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[以下是到主机203.175.156.67的traceroute结果: 192.168.58.110192.168.58.12510.210.253.13410.255.253.9010.255.253.22192.168.246.2910.246.248.10203.175.156.67]]></msg>
+                <desc><![CDATA[    Traceroute（路由跟踪）是一个常用的网络测试命令。用来检测主机到目标主机间的路由情况。Traceroute通过发送小的数据包到目的设备直到其返回，来测量其需要多长时间。可以帮助网络管理员确定网络结构和网络故障。    本测试尝试获得漏洞扫描器与该主机之间的路由。]]></desc>
+                <solve><![CDATA[漏洞扫描器需要这个信息来帮助扫描取得更准确的结果。但是这不是一个漏洞。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00584</id>
+                <name><![CDATA[检查类Unix系统Sendmail服务状态]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[类UNIX测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[远程主机Sendmail服务服务未安装。]]></msg>
+                <desc><![CDATA[该脚本用来检查类Unix系统Sendmail服务状态：启用、禁用、未安装。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，配置信息的收集只是为了使扫描的结果更加准确；但请确认扫描的结果是否符合贵公司的安全策略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00943</id>
+                <name><![CDATA[检测SSH 协议版本支持情况]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>8899</port>
+                <msg><![CDATA[远程 SSH 程序支持以下 SSH 协议版本：  - 1.99  - 2.0]]></msg>
+                <desc><![CDATA[SSH安全shell，向远程用户提供了一个安全的shell。目前SSH存在多个协议版本。本测试检测远程的 SSH 服务所支持的SSH 协议版本。关于这个漏洞的更多信息请参考：http://www.securityspace.com/smysecure/catid.html?id=10881]]></desc>
+                <solve><![CDATA[尽管这并不表示存在一个漏洞，但我们建议用户随时保持自己的SSH服务器版本最新。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-01174</id>
+                <name><![CDATA[获取RPC应用列表]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[RPC测试]]></familyName>
+                <cve_id/>
+                <port>111</port>
+                <msg><![CDATA[RPC程序#100000版本2 'portmapper' (portmap sunrpc rpcbind)正在该端口运行。]]></msg>
+                <desc><![CDATA[    RPC(远程过程调用)是一个强大的建立分布式客户-服务器应用的技术。它打破了传统的本地过程调用的观点，使得调用过程与被调用过程不必在同一个地址空间中。    本测试使用DUMP PRC调用，来获取主机上已经注册的RPC程序。    常见的RPC应用有status(RPC服务状态)、portmapper(将PRC程序号转换成与TCP/IP端口号)、fam(文件变更监视器)等]]></desc>
+                <solve><![CDATA[扫描器需要这个测试来保证扫描的准确性。这并不是一个漏洞]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-01174</id>
+                <name><![CDATA[获取RPC应用列表]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[RPC测试]]></familyName>
+                <cve_id/>
+                <port>111 udp</port>
+                <msg><![CDATA[RPC程序#100000版本2 'portmapper' (portmap sunrpc rpcbind)正在该端口运行。]]></msg>
+                <desc><![CDATA[    RPC(远程过程调用)是一个强大的建立分布式客户-服务器应用的技术。它打破了传统的本地过程调用的观点，使得调用过程与被调用过程不必在同一个地址空间中。    本测试使用DUMP PRC调用，来获取主机上已经注册的RPC程序。    常见的RPC应用有status(RPC服务状态)、portmapper(将PRC程序号转换成与TCP/IP端口号)、fam(文件变更监视器)等]]></desc>
+                <solve><![CDATA[扫描器需要这个测试来保证扫描的准确性。这并不是一个漏洞]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-01174</id>
+                <name><![CDATA[获取RPC应用列表]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[RPC测试]]></familyName>
+                <cve_id/>
+                <port>960 udp</port>
+                <msg><![CDATA[RPC程序#100024版本1 'status' ()正在该端口运行。]]></msg>
+                <desc><![CDATA[    RPC(远程过程调用)是一个强大的建立分布式客户-服务器应用的技术。它打破了传统的本地过程调用的观点，使得调用过程与被调用过程不必在同一个地址空间中。    本测试使用DUMP PRC调用，来获取主机上已经注册的RPC程序。    常见的RPC应用有status(RPC服务状态)、portmapper(将PRC程序号转换成与TCP/IP端口号)、fam(文件变更监视器)等]]></desc>
+                <solve><![CDATA[扫描器需要这个测试来保证扫描的准确性。这并不是一个漏洞]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-01174</id>
+                <name><![CDATA[获取RPC应用列表]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[RPC测试]]></familyName>
+                <cve_id/>
+                <port>963</port>
+                <msg><![CDATA[RPC程序#100024版本1 'status' ()正在该端口运行。]]></msg>
+                <desc><![CDATA[    RPC(远程过程调用)是一个强大的建立分布式客户-服务器应用的技术。它打破了传统的本地过程调用的观点，使得调用过程与被调用过程不必在同一个地址空间中。    本测试使用DUMP PRC调用，来获取主机上已经注册的RPC程序。    常见的RPC应用有status(RPC服务状态)、portmapper(将PRC程序号转换成与TCP/IP端口号)、fam(文件变更监视器)等]]></desc>
+                <solve><![CDATA[扫描器需要这个测试来保证扫描的准确性。这并不是一个漏洞]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[该主机正在运行的是Linux Kernel 2.6]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>203.175.156.76</hostIp>
+        <startTime>2020-12-21 11:47:26</startTime>
+        <endTime>2020-12-21 12:16:11</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[ux localhost.localdomain 2.6.32-696.el6.x86_64 #1 SMP Tue Mar 21 19:29:05 UTC 2017 x86_64]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList>
+            <item>
+                <portValue>161</portValue>
+                <portType>tcp</portType>
+                <protocolName>snmp</protocolName>
+                <serverVersion/>
+            </item>
+            <item>
+                <portValue>22</portValue>
+                <portType>tcp</portType>
+                <protocolName>ssh</protocolName>
+                <serverVersion><![CDATA[SSH-2.0-OpenSSH_8.3]]></serverVersion>
+            </item>
+            <item>
+                <portValue>5901</portValue>
+                <portType>tcp</portType>
+                <protocolName>vnc</protocolName>
+                <serverVersion/>
+            </item>
+            <item>
+                <portValue>6001</portValue>
+                <portType>tcp</portType>
+                <protocolName>X11</protocolName>
+                <serverVersion><![CDATA[11.0]]></serverVersion>
+            </item>
+            <item>
+                <portValue>8080</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 404 Not FoundServer: Apache-Coyote/1.1Content-Length: 0Date: Mon, 21 Dec 2020 04:07]]></serverVersion>
+            </item>
+        </portList>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-2002-00480</id>
+                <name><![CDATA[SNMP代理的默认通讯名称]]></name>
+                <levelChs>紧急</levelChs>
+                <level>5</level>
+                <familyName><![CDATA[SNMP测试]]></familyName>
+                <cve_id><![CDATA[CVE-1999-0186 CVE-1999-0254 CVE-1999-0472 CVE-1999-0516 CVE-1999-0517 CVE-1999-0792 CVE-2000-0147 CVE-2001-0380 CVE-2001-0514 CVE-2001-1210 CVE-2002-0109 CVE-2002-0478 CVE-2002-1229 CVE-2004-0311 CVE-2004-1474 CVE-2010-1574]]></cve_id>
+                <port>161 udp</port>
+                <msg><![CDATA[发现SNMP代理community名为: public]]></msg>
+                <desc><![CDATA[该主机的SNMP代理允许远程用户以常见的public community名称访问，攻击者可能据此可以获得很多关于网络和系统的有用信息（这与你使用的 MIB（管理信息库）有关）。如果可以获得到”writeall”的权限的话，这将更是一个巨大的安全漏洞，可以让攻击者们造成更严重的破坏。]]></desc>
+                <solve><![CDATA[1.临时解决办法:  用防火墙过滤UDP 162 UDP 162 端口的连接或者禁止不可信的IP访问SNMP服务器。2.最终解决办法:  如果不需要SNMP服务，请关闭它。如果需要的话，请使用不易猜测的community names。关于这个漏洞的详细信息，请参考：http://www.securiteam.com/exploits/Windows_NT_s_SNMP_service_vulnerability.html]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-03345</id>
+                <name><![CDATA[SNMP服务默认团体名称（public）检查]]></name>
+                <levelChs>高风险</levelChs>
+                <level>4</level>
+                <familyName><![CDATA[SNMP测试]]></familyName>
+                <cve_id><![CDATA[CVE-1999-0517]]></cve_id>
+                <port>161 udp</port>
+                <msg><![CDATA[远程SNMP服务会对如下团体名称作出响应：public]]></msg>
+                <desc><![CDATA[该脚本用来检测是否有可能从远程SNMP服务器上获取默认团体名（public）。远程攻击者能够利用该漏洞来获取远程主机的更多信息，甚至更改远程主机上的配置（如果默认团体名拥有修改权限）。]]></desc>
+                <solve><![CDATA[1、最终解决方案：   如果没有用到SNMP服务请将该服务禁用，或者通过防火墙过滤进入该端口的UDP包。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00520</id>
+                <name><![CDATA[VNC检测]]></name>
+                <levelChs>中风险</levelChs>
+                <level>3</level>
+                <familyName><![CDATA[木马病毒测试]]></familyName>
+                <cve_id/>
+                <port>5901</port>
+                <msg><![CDATA[远程VNC服务支持的协议最高版本是: RFB 003.003]]></msg>
+                <desc><![CDATA[检测到远程的服务器运行了VNC。VNC是一种远程控制软件，允许把终端显示在远程主机上。它在方便管理员远程操作主机的同时，也为黑客攻击提供了一条途径。]]></desc>
+                <solve><![CDATA[如果不是确实需要，请停止VNC服务。如果一定需要使用VNC，那么在防火墙上设置允许连接的主机，并设置足够复杂的密码。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2014-08284</id>
+                <name><![CDATA[SNMP ’GETBULK’ 反射分布式拒绝服务攻击漏洞]]></name>
+                <levelChs>中风险</levelChs>
+                <level>3</level>
+                <familyName><![CDATA[SNMP测试]]></familyName>
+                <cve_id/>
+                <port>161 udp</port>
+                <msg><![CDATA[Scanner能够确认远程主机存在DDOS攻击：  Request size  (bytes) : 42  Response size (bytes) : 2392]]></msg>
+                <desc><![CDATA[收到一个大于"max-repetitions"正常值的"GETBULK" request，远程SNMP守护进程返回大量的数据，远程攻击者可以利用这个SNMP服务器反射到任意远程主机进行分布式拒绝服务攻击。]]></desc>
+                <solve><![CDATA[1、最终解决方案： - 如果没用的话禁用远程主机上的SNMP服务，否则，限制和监视该服务访问，并考虑修改默认的公共团体字符串。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00241</id>
+                <name><![CDATA[icmp 时间戳请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[ICMP（Internet Control Message Protocol，Internet控制信息协议）为IP 堆栈发送简单的信息。由于ICMP过于简单，所以它对于网络的安全性有比较大的负面影响，攻击者可以利用ICMP进行网络扫描、拒绝服务（DoS）攻击和隧道攻击等各种危害网络安全的活动。最常用的ICMP应用就是通常被称为Ping的操作。攻击者可以利用ICMP协议来探测主机地址是否存活。远程主机响应一个ICMP时间戳请求，就允许攻击者知道你机器的时间，这可以帮助攻击者攻击那些基于主机时间的协议。]]></desc>
+                <solve><![CDATA[1 过滤掉ICMP时间戳请求（类型13)和向外的ICMP时间戳应答（类型14）。2 重新配置远程主机，使主机不应答ICMP时间戳请求。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00559</id>
+                <name><![CDATA[X服务器正在运行]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[杂项测试]]></familyName>
+                <cve_id/>
+                <port>6001</port>
+                <msg><![CDATA[这个X服务器不允许任意的客户端连接，但我们还是建议你过滤到X服务端口的连接，因为攻击者还是有可能发送恶意的数据导致你的X会话变慢，甚至崩溃。这个X服务的版本是: 11.0以下是我们接收到的消息: No protocol specified风险等级: 低]]></msg>
+                <desc><![CDATA[X11是一个客户机-服务器的协议。基本上来说，服务器端管理屏幕，客户端连接服务器并发送诸如画一个窗口、菜单之类的请求，服务器会向客户发送如鼠标双击、按键等消息。X服务器的不恰当配置可以接受来自任何地方的连接，这使得攻击者可以连接到X服务器从而记录用户的击键，这很可能包含很多关于帐号密码的信息。为了解决这个问题，请使用xauth或者MIT cookies。]]></desc>
+                <solve><![CDATA[这并不是一个漏洞，但我们需要这个信息以便为其他的安全检测提供足够的信息。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2001-00870</id>
+                <name><![CDATA[通过SNMP获取操作系统类型]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[SNMP测试]]></familyName>
+                <cve_id/>
+                <port>161 udp</port>
+                <msg><![CDATA[使用SNMP, 我们可以确定远程操作系统是：ux localhost.localdomain 2.6.32-696.el6.x86_64 #1 SMP Tue Mar 21 19:29:05 UTC 2017 x86_64]]></msg>
+                <desc><![CDATA[SNMP，Simple Network Management Protocol，简单网络管理协议。用于管理IP网络上结点的协议。当使用特殊的客户端应用程序，通过该“查询密码”community strings的验证，将获得对应的权限（只读 或者 读写）对SNMP中管理信息库（MIB）进行访问。 而管理信息库（MIB）中则保存了系统所有的重要信息。也就是说，如果可以知道community strings 这个“查询密码”，我们就可以刺探系统的信息了。比较遗憾的是，很多网络设备厂商以及操作系统厂商，在初始状态下，都使用比较统一的“查询密码”，这也就给黑客提供了足够的方便。]]></desc>
+                <solve><![CDATA[1.临时解决办法:  这不是一个漏洞，扫描器需要此信息使扫描更加准确。2.最终解决办法：  如果您确实很在意此信息，用防火墙过滤UDP 162 UDP 162 端口的连接或者禁止不可信的IP访问SNMP服务器。将您操作系统的类型和版本改为更一般的内容；如果您已经修改成功，则可以忽略该漏洞。如果您不需要SNMP服务，请关闭该服务。参考链接:http://bhole.pc37.org/Arcticle/HackerTechnique/030516-040.htm]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00872</id>
+                <name><![CDATA[通过SNMP获得进程列表]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[SNMP测试]]></familyName>
+                <cve_id/>
+                <port>161 udp</port>
+                <msg><![CDATA[  PID   CPU   MEM COMMAND           ARGS    1     7  1552 init                2     0     0 kthreadd            3     0     0 migration/0         4     0     0 ksoftirqd/0         5     0     0 stopper/0           6     6     0 watchdog/0          7     0     0 migration/1         8     0     0 stopper/1           9     0     0 ksoftirqd/1        10     5     0 watchdog/1         11     0     0 migration/2        12     0     0 stopper/2          13     0     0 ksoftirqd/2        14     5     0 watchdog/2         15     0     0 migration/3        16     0     0 stopper/3          17    99     0 ksoftirqd/3        18     6     0 watchdog/3         19     0     0 migration/4        20     0     0 stopper/4          21     0     0 ksoftirqd/4        22     5     0 watchdog/4         23     0     0 migration/5        24     0     0 stopper/5          25     0     0 ksoftirqd/5        26     5     0 watchdog/5         27     0     0 migration/6        28     0     0 stopper/6          29     0     0 ksoftirqd/6        30     5     0 watchdog/6        ...\n]]></msg>
+                <desc><![CDATA[这个脚本使用SNMP得到在远程主机上运转的过程的清单.]]></desc>
+                <solve><![CDATA[1.临时解决办法:  用防火墙过滤UDP 162 UDP 162 端口的连接或者禁止不可信的IP访问SNMP服务器。2.最终解决办法:  使用SNMP本身就意味着要向外界提供一些系统信息。但是如果这些信息被黑客获得，就有可能导致更具针对性的攻击。为此，你应该确定是否真的需要使用SNMP，如果真的要使用，请确保只有尽可能少的机器可以访问SNMP服务，否则应该禁用SNMP 服务或者将 SNMP community 设置足够复杂。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00876</id>
+                <name><![CDATA[通过SNMP获得网络接口列表]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[SNMP测试]]></familyName>
+                <cve_id/>
+                <port>161 udp</port>
+                <msg><![CDATA[ 接口 1 信息 : 索引号      : 1 描述        : lo 物理地址    :  接口 2 信息 : 索引号      : 2 描述        : eth0 物理地址    : 0025b31a8ab8 接口 3 信息 : 索引号      : 3 描述        : eth1 物理地址    : 0025b31a8ab6]]></msg>
+                <desc><![CDATA[SNMP是基于TCP/IP的一个Internet标准网络管理协议。目前这种网络管理协议应用很广，几乎所有的网络厂商推出的网络管理系统都支持SNMP协议。本测试通过SNMP得到已安装在远程主机上的网络界面的清单.]]></desc>
+                <solve><![CDATA[1.临时解决办法:  用防火墙过滤UDP 162 UDP 162 端口的连接或者禁止不可信的IP访问SNMP服务器。2.最终解决办法:  使用SNMP本身就意味着要向外界提供一些系统信息。但是如果这些信息被黑客获得，就有可能导致更具针对性的攻击。为此，你应该确定是否真的需要使用SNMP，如果真的要使用，请确保只有尽可能少的机器可以访问SNMP服务，否则应该禁用SNMP 服务或者将 SNMP community 设置足够复杂。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-04447</id>
+                <name><![CDATA[远程主机系统网卡包含信息检测]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[杂项测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[扫描系统能够确认网卡制造商信息如下：00:25:b3:1a:8a:b8 : Hewlett-Packard Company00:25:b3:1a:8a:b6 : Hewlett-Packard Company]]></msg>
+                <desc><![CDATA[该脚本用于检测远程主机系统网卡上Mac地址信息。MAC地址通常表示为12个16进制数，每2个16进制数之间用冒号隔开，如：08: 00: 20: 0A: 8C: 6D就是一个MAC地址，其中前6位16进制数08:00:20代表网络硬件制造商的编号，它是由IEEE分配，而后3位16进制数0A:8C:6D代表该制造商所制造的某个网络产品（如网卡）的系列号。参考信息：http://standards.ieee.org/faqs/OUI.htmlhttp://standards.ieee.org/regauth/oui/index.shtml]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04829</id>
+                <name><![CDATA[超文本传输协议(HTTP)的信息]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8080</port>
+                <msg><![CDATA[协议版本  : HTTP/1.1SSL : noKeep-Alive : no允许选项  : (Not implemented)Headers :  Server: Apache-Coyote/1.1  Content-Length: 0  Date: Mon, 21 Dec 2020 04:12:33 GMT  ]]></msg>
+                <desc><![CDATA[这个脚本主要获取了远程HTTP协议的信息：版本信息、HTTP是否保持活动状态、HTTP管道启动情况等等。这个脚本只是信息的获取并不涉及任何安全方面的问题。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04835</id>
+                <name><![CDATA[支持 TCP/IP 时间戳]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[杂项测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[远程主机实现由RFC1323所定义的TCP时间戳，这个功能的一个副作用是：远程主机正常运行的时间有时可以计算。请参见：http://www.ietf.org/rfc/rfc1323.txt]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-04859</id>
+                <name><![CDATA[被允许的 HTTP 方法（每个目录）]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8080</port>
+                <msg><![CDATA[Based on tests of each method :   - HTTP methods ACL BASELINE-CONTROL BCOPY BDELETE BMOVE BPROPFIND     BPROPPATCH CHECKIN CHECKOUT CONNECT COPY DEBUG DELETE GET HEAD     INDEX LABEL LOCK MERGE MKACTIVITY MKCOL MKWORKSPACE MOVE NOTIFY     OPTIONS ORDERPATCH PATCH POLL POST PROPFIND PROPPATCH PUT REPORT     RPC_IN_DATA RPC_OUT_DATA SEARCH SUBSCRIBE TRACE UNCHECKOUT UNLOCK     UNSUBSCRIBE UPDATE VERSION-CONTROL X-MS-ENUMATTS are allowed on :     /  - Invalid/unknown HTTP methods are allowed on :    /]]></msg>
+                <desc><![CDATA[通过调用 OPTIONS 方法，可能能确定每个目录中所允许的 HTTP 方法。 - 如果在扫描策略中启用“完全测试”或启用“Web 应用程序测试”； - 在每个目录中有多个不同的 HTTP 方法，如果接收到 400, 403, 405, 或 501 的返回值，则会被认为它们不受支持；]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2013-07725</id>
+                <name><![CDATA[SSH 算法和语言支持检测]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>22</port>
+                <msg><![CDATA[扫描系统与服务器协商以下加密算法: 服务器支持以下选项kex_algorithms :   curve25519-sha256  curve25519-sha256@libssh.org  diffie-hellman-group-exchange-sha256  diffie-hellman-group14-sha256  diffie-hellman-group16-sha512  diffie-hellman-group18-sha512  ecdh-sha2-nistp256  ecdh-sha2-nistp384  ecdh-sha2-nistp521服务器支持以下选项server_host_key_algorithms :   ecdsa-sha2-nistp256  rsa-sha2-256  rsa-sha2-512  ssh-ed25519  ssh-rsa服务器支持以下选项encryption_algorithms_client_to_server :   aes128-ctr  aes128-gcm@openssh.com  aes192-ctr  aes256-ctr  aes256-gcm@openssh.com  chacha20-poly1305@openssh.com服务器支持以下选项encryption_algorithms_server_to_client :   aes128-ctr  aes128-gcm@openssh.com  aes192-ctr  aes256-ctr  aes256-gcm@openssh.com  chacha20-poly1305@openssh.com服务器支持以下选项mac_algorithms_client_to_server :   hmac-sha1  hmac-sha1-etm@openssh.com  hmac-sha2-256  hmac-sha2-256-etm@openssh.com  hmac-sha2-512  hmac-sha2-512-etm@openssh.com  umac-128-etm@openssh.com  umac-128@openssh.com  umac-64-etm@openssh.com  umac-64@openssh.com服务器支持以下选项mac_algorithms_server_to_client :   hmac-sha1  hmac-sha1-etm@openssh.com  hmac-sha2-256  hmac-sha2-256-etm@openssh.com  hmac-sha2-512  hmac-sha2-512-etm@openssh.com  umac-128-etm@openssh.com  umac-128@openssh.com  umac-64-etm@openssh.com  umac-64@openssh.com服务器支持以下选项compression_algorithms_client_to_server :   none  zlib@openssh.com服务器支持以下选项compression_algorithms_server_to_client :   none  zlib@openssh.com]]></msg>
+                <desc><![CDATA[这个脚本检测支持远程服务加密通信算法。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00234</id>
+                <name><![CDATA[HTTP服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>8080</port>
+                <msg><![CDATA[远程的web服务器类型是:Apache-Coyote/1.1'ServerTokens'标志是ProductOnly并不会阻止Apache显示它的类型。]]></msg>
+                <desc><![CDATA[    HTTP是超文本传输协议（Hyper Text Transfer Protocol）的英文简写。它是互联网上应用最为广泛的一种网络传输协议。用于传输超文本标记语言（HTML--Hyper Text Markup Language）写的文件，也就是我们通常说的网页。    HTTP服务器（WEB服务器）通过HTTP向客户端提供网页服务。    通过连接服务器来检测HTTP服务器的类型和版本。这些信息被称为服务器旗帜（Flag)。    服务器旗帜向攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助攻击者的攻击。    在配置服务器的时候，版本号和类型应尽可能的去除。]]></desc>
+                <solve><![CDATA[1.最终解决方法:  用更通用的信息来标示服务器，不要让攻击者轻易的得到你的服务器的类型和版本。  *对于Apache服务器，确认删除了通用logos apache.gif。  *对于Win2000的IIS服务，按照如下步骤进行设置：1.管理工具－>Internet服务管理器－>停止Internet服务；2.删除%SystemRoot%\\system32\\dllcache\\w3scv.dll文件；3.用UltraEdit或类似的二进制编辑器将%SystemRoot%\\system32\\INETSRV\\W3svc.dll打开；4.查找Micro字样，把原来的Microsoft－IIS/5.0（后面的那个）改成你希望的值，如改为9.0；注意：如果您已经更改过该版本号，则该漏洞可以忽略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>22</port>
+                <msg><![CDATA[一个 SSH 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>5901</port>
+                <msg><![CDATA[一个 vnc 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>8080</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00485</id>
+                <name><![CDATA[SSH 服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>22</port>
+                <msg><![CDATA[远程的 SSH 版本为 : SSH-2.0-OpenSSH_8.3]]></msg>
+                <desc><![CDATA[通过连接服务器来检测SSH服务器的类型和版本。登录标志给潜在的攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助了攻击者的攻击。在配置服务器的时候，版本号和类型应尽可能的忽略。]]></desc>
+                <solve><![CDATA[1.临时解决办法：  这不是一个漏洞，扫描器需要此信息使扫描更加准确。2.最终解决办法：a 将登陆标记改为更通用的值，如welcome。b 过滤掉不信任的主机，不允话它们访问这个端口。防止来自外部的攻击，建议堵塞SSH使用的TCP 22号端口。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00510</id>
+                <name><![CDATA[路由跟踪测试]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[以下是到主机203.175.156.76的traceroute结果: 192.168.58.110192.168.58.12510.210.253.13410.255.253.9010.255.253.22192.168.246.29?10.246.248.10203.175.156.76]]></msg>
+                <desc><![CDATA[    Traceroute（路由跟踪）是一个常用的网络测试命令。用来检测主机到目标主机间的路由情况。Traceroute通过发送小的数据包到目的设备直到其返回，来测量其需要多长时间。可以帮助网络管理员确定网络结构和网络故障。    本测试尝试获得漏洞扫描器与该主机之间的路由。]]></desc>
+                <solve><![CDATA[漏洞扫描器需要这个信息来帮助扫描取得更准确的结果。但是这不是一个漏洞。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00584</id>
+                <name><![CDATA[检查类Unix系统Sendmail服务状态]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[类UNIX测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[远程主机Sendmail服务服务未安装。]]></msg>
+                <desc><![CDATA[该脚本用来检查类Unix系统Sendmail服务状态：启用、禁用、未安装。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，配置信息的收集只是为了使扫描的结果更加准确；但请确认扫描的结果是否符合贵公司的安全策略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00943</id>
+                <name><![CDATA[检测SSH 协议版本支持情况]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>22</port>
+                <msg><![CDATA[远程 SSH 程序支持以下 SSH 协议版本：  - 1.99  - 2.0]]></msg>
+                <desc><![CDATA[SSH安全shell，向远程用户提供了一个安全的shell。目前SSH存在多个协议版本。本测试检测远程的 SSH 服务所支持的SSH 协议版本。关于这个漏洞的更多信息请参考：http://www.securityspace.com/smysecure/catid.html?id=10881]]></desc>
+                <solve><![CDATA[尽管这并不表示存在一个漏洞，但我们建议用户随时保持自己的SSH服务器版本最新。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[该主机正在运行的是ux localhost.localdomain 2.6.32-696.el6.x86_64 #1 SMP Tue Mar 21 19:29:05 UTC 2017 x86_64]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2005-01957</id>
+                <name><![CDATA[通过SNMP获取已安装的软件]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>161 udp</port>
+                <msg><![CDATA[这里只列出部分安装的软件:hal-info-20090716-5.el6gnome-doc-utils-stylesheets-0.18.1-1.el6samba-client-3.6.23-53.el6_10iso-codes-3.16-2.el6xorg-x11-drv-evdev-2.9.2-1.el6m17n-db-oriya-1.5.5-1.1.el6tcpdump-4.0.0-11.20090921gitdf3cb4.2.el6pax-3.4-10.1.el6gnome-panel-2.30.2-16.el6m17n-db-tamil-1.5.5-1.1.el6xorg-x11-fonts-Type1-7.2-11.el6lm_sensors-libs-3.1.1-17.el6spice-vdagent-0.14.0-13.el6_10.1un-core-fonts-common-1.0.2-0.15.080608.el6xorg-x11-drv-sisusb-0.9.6-11.el6cyrus-sasl-plain-2.1.23-15.el6_6.2ledmon-0.79-1.el6cairo-1.8.8-6.el6_6xorg-x11-drv-mga-1.6.3-12.el6]]></msg>
+                <desc><![CDATA[    SNMP提供了获得主机上安装了哪些软件的方法。攻击者有可能通过发送SNMP请求（其中的OID设为1.3.6.1.2.1.25.6.3.1.2）来得到这些信息，这有助于攻击进行更有针对性的攻击。]]></desc>
+                <solve><![CDATA[    如果不使用SNMP，请关闭SNMP服务。否则，请使用防火墙对滤此UPD端口的通信。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2008-02843</id>
+                <name><![CDATA[通过SNMP枚举路由信息]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SNMP测试]]></familyName>
+                <cve_id/>
+                <port>161 udp</port>
+                <msg/>
+                <desc><![CDATA[通过发送SNMP请求的方式来获取远程主机的路由信息；攻击者可以利用这些信息进一步获得更多网络拓扑信息。]]></desc>
+                <solve><![CDATA[如果您没有用到SNMP服务，那么请禁用该服务，或者过滤通过该端口的UDP包。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-03014</id>
+                <name><![CDATA[SNMP版本检测]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SNMP测试]]></familyName>
+                <cve_id/>
+                <port>161</port>
+                <msg><![CDATA[远程SNMP服务代理的版本是：SNMPv1。]]></msg>
+                <desc><![CDATA[该脚本主要用来检测远程SNMP代理的版本，通过发送一个“get-next-request”SNMP报文，可以获取到远程SNMP代理的版本信息。]]></desc>
+                <solve><![CDATA[1、最终解决方案：   如果您没有用的SNMP服务，请禁用该服务，或者过滤通过该端口的UDP包。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>10.210.133.157</hostIp>
+        <startTime>2020-12-21 11:47:26</startTime>
+        <endTime>2020-12-21 12:02:48</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName/>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList>
+            <item>
+                <portValue>22</portValue>
+                <portType>tcp</portType>
+                <protocolName>ssh</protocolName>
+                <serverVersion><![CDATA[SSH-2.0-OpenSSH_8.3]]></serverVersion>
+            </item>
+        </portList>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-1999-00241</id>
+                <name><![CDATA[icmp 时间戳请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[ICMP（Internet Control Message Protocol，Internet控制信息协议）为IP 堆栈发送简单的信息。由于ICMP过于简单，所以它对于网络的安全性有比较大的负面影响，攻击者可以利用ICMP进行网络扫描、拒绝服务（DoS）攻击和隧道攻击等各种危害网络安全的活动。最常用的ICMP应用就是通常被称为Ping的操作。攻击者可以利用ICMP协议来探测主机地址是否存活。远程主机响应一个ICMP时间戳请求，就允许攻击者知道你机器的时间，这可以帮助攻击者攻击那些基于主机时间的协议。]]></desc>
+                <solve><![CDATA[1 过滤掉ICMP时间戳请求（类型13)和向外的ICMP时间戳应答（类型14）。2 重新配置远程主机，使主机不应答ICMP时间戳请求。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04835</id>
+                <name><![CDATA[支持 TCP/IP 时间戳]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[杂项测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[远程主机实现由RFC1323所定义的TCP时间戳，这个功能的一个副作用是：远程主机正常运行的时间有时可以计算。请参见：http://www.ietf.org/rfc/rfc1323.txt]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2013-07725</id>
+                <name><![CDATA[SSH 算法和语言支持检测]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>22</port>
+                <msg><![CDATA[扫描系统与服务器协商以下加密算法: 服务器支持以下选项kex_algorithms :   curve25519-sha256  curve25519-sha256@libssh.org  diffie-hellman-group-exchange-sha256  diffie-hellman-group14-sha256  diffie-hellman-group16-sha512  diffie-hellman-group18-sha512  ecdh-sha2-nistp256  ecdh-sha2-nistp384  ecdh-sha2-nistp521服务器支持以下选项server_host_key_algorithms :   ecdsa-sha2-nistp256  rsa-sha2-256  rsa-sha2-512  ssh-ed25519  ssh-rsa服务器支持以下选项encryption_algorithms_client_to_server :   aes128-ctr  aes128-gcm@openssh.com  aes192-ctr  aes256-ctr  aes256-gcm@openssh.com  chacha20-poly1305@openssh.com服务器支持以下选项encryption_algorithms_server_to_client :   aes128-ctr  aes128-gcm@openssh.com  aes192-ctr  aes256-ctr  aes256-gcm@openssh.com  chacha20-poly1305@openssh.com服务器支持以下选项mac_algorithms_client_to_server :   hmac-sha1  hmac-sha1-etm@openssh.com  hmac-sha2-256  hmac-sha2-256-etm@openssh.com  hmac-sha2-512  hmac-sha2-512-etm@openssh.com  umac-128-etm@openssh.com  umac-128@openssh.com  umac-64-etm@openssh.com  umac-64@openssh.com服务器支持以下选项mac_algorithms_server_to_client :   hmac-sha1  hmac-sha1-etm@openssh.com  hmac-sha2-256  hmac-sha2-256-etm@openssh.com  hmac-sha2-512  hmac-sha2-512-etm@openssh.com  umac-128-etm@openssh.com  umac-128@openssh.com  umac-64-etm@openssh.com  umac-64@openssh.com服务器支持以下选项compression_algorithms_client_to_server :   none  zlib@openssh.com服务器支持以下选项compression_algorithms_server_to_client :   none  zlib@openssh.com]]></msg>
+                <desc><![CDATA[这个脚本检测支持远程服务加密通信算法。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>22</port>
+                <msg><![CDATA[一个 SSH 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00485</id>
+                <name><![CDATA[SSH 服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>22</port>
+                <msg><![CDATA[远程的 SSH 版本为 : SSH-2.0-OpenSSH_8.3]]></msg>
+                <desc><![CDATA[通过连接服务器来检测SSH服务器的类型和版本。登录标志给潜在的攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助了攻击者的攻击。在配置服务器的时候，版本号和类型应尽可能的忽略。]]></desc>
+                <solve><![CDATA[1.临时解决办法：  这不是一个漏洞，扫描器需要此信息使扫描更加准确。2.最终解决办法：a 将登陆标记改为更通用的值，如welcome。b 过滤掉不信任的主机，不允话它们访问这个端口。防止来自外部的攻击，建议堵塞SSH使用的TCP 22号端口。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00510</id>
+                <name><![CDATA[路由跟踪测试]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[以下是到主机10.210.133.157的traceroute结果: 192.168.58.110192.168.58.125?10.210.254.25010.210.133.157]]></msg>
+                <desc><![CDATA[    Traceroute（路由跟踪）是一个常用的网络测试命令。用来检测主机到目标主机间的路由情况。Traceroute通过发送小的数据包到目的设备直到其返回，来测量其需要多长时间。可以帮助网络管理员确定网络结构和网络故障。    本测试尝试获得漏洞扫描器与该主机之间的路由。]]></desc>
+                <solve><![CDATA[漏洞扫描器需要这个信息来帮助扫描取得更准确的结果。但是这不是一个漏洞。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00584</id>
+                <name><![CDATA[检查类Unix系统Sendmail服务状态]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[类UNIX测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[远程主机Sendmail服务服务未安装。]]></msg>
+                <desc><![CDATA[该脚本用来检查类Unix系统Sendmail服务状态：启用、禁用、未安装。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，配置信息的收集只是为了使扫描的结果更加准确；但请确认扫描的结果是否符合贵公司的安全策略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2002-00943</id>
+                <name><![CDATA[检测SSH 协议版本支持情况]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[SSH测试]]></familyName>
+                <cve_id/>
+                <port>22</port>
+                <msg><![CDATA[远程 SSH 程序支持以下 SSH 协议版本：  - 1.99  - 2.0]]></msg>
+                <desc><![CDATA[SSH安全shell，向远程用户提供了一个安全的shell。目前SSH存在多个协议版本。本测试检测远程的 SSH 服务所支持的SSH 协议版本。关于这个漏洞的更多信息请参考：http://www.securityspace.com/smysecure/catid.html?id=10881]]></desc>
+                <solve><![CDATA[尽管这并不表示存在一个漏洞，但我们建议用户随时保持自己的SSH服务器版本最新。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>10.210.253.4</hostIp>
+        <startTime>2020-12-21 11:54:56</startTime>
+        <endTime>2020-12-21 12:08:51</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[Microsoft Windows]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList/>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-1999-00241</id>
+                <name><![CDATA[icmp 时间戳请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[ICMP（Internet Control Message Protocol，Internet控制信息协议）为IP 堆栈发送简单的信息。由于ICMP过于简单，所以它对于网络的安全性有比较大的负面影响，攻击者可以利用ICMP进行网络扫描、拒绝服务（DoS）攻击和隧道攻击等各种危害网络安全的活动。最常用的ICMP应用就是通常被称为Ping的操作。攻击者可以利用ICMP协议来探测主机地址是否存活。远程主机响应一个ICMP时间戳请求，就允许攻击者知道你机器的时间，这可以帮助攻击者攻击那些基于主机时间的协议。]]></desc>
+                <solve><![CDATA[1 过滤掉ICMP时间戳请求（类型13)和向外的ICMP时间戳应答（类型14）。2 重新配置远程主机，使主机不应答ICMP时间戳请求。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01428</id>
+                <name><![CDATA[源路由包漏洞]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[防火墙测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[您的主机能够接受松散的源路由IP包，攻击者能够在简单配置的IP过滤系统中利用这个漏洞来实现另外一个漏洞的攻击。]]></desc>
+                <solve><![CDATA[在主机或者环绕路由防火墙上丢弃源路由包。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-00404</id>
+                <name><![CDATA[识别目标系统或服务的类型]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0454]]></cve_id>
+                <port></port>
+                <msg><![CDATA[Microsoft Windows]]></msg>
+                <desc><![CDATA[这个脚本通过不同方式来猜测/识别目标主机上各种不同服务和操作系统的类型和版本。远程未授权攻击者能够利用这些敏感信息发起进一步的测试和攻击。]]></desc>
+                <solve><![CDATA[这本身不是一个安全漏洞，信息的收集只是为了提高扫描的准确率。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[该主机正在运行的是：Microsoft Windows]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>10.210.253.5</hostIp>
+        <startTime>2020-12-21 12:00:07</startTime>
+        <endTime>2020-12-21 12:15:21</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[Microsoft Windows]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList/>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-1999-00241</id>
+                <name><![CDATA[icmp 时间戳请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[ICMP（Internet Control Message Protocol，Internet控制信息协议）为IP 堆栈发送简单的信息。由于ICMP过于简单，所以它对于网络的安全性有比较大的负面影响，攻击者可以利用ICMP进行网络扫描、拒绝服务（DoS）攻击和隧道攻击等各种危害网络安全的活动。最常用的ICMP应用就是通常被称为Ping的操作。攻击者可以利用ICMP协议来探测主机地址是否存活。远程主机响应一个ICMP时间戳请求，就允许攻击者知道你机器的时间，这可以帮助攻击者攻击那些基于主机时间的协议。]]></desc>
+                <solve><![CDATA[1 过滤掉ICMP时间戳请求（类型13)和向外的ICMP时间戳应答（类型14）。2 重新配置远程主机，使主机不应答ICMP时间戳请求。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01428</id>
+                <name><![CDATA[源路由包漏洞]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[防火墙测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[您的主机能够接受松散的源路由IP包，攻击者能够在简单配置的IP过滤系统中利用这个漏洞来实现另外一个漏洞的攻击。]]></desc>
+                <solve><![CDATA[在主机或者环绕路由防火墙上丢弃源路由包。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-00404</id>
+                <name><![CDATA[识别目标系统或服务的类型]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0454]]></cve_id>
+                <port></port>
+                <msg><![CDATA[Microsoft Windows]]></msg>
+                <desc><![CDATA[这个脚本通过不同方式来猜测/识别目标主机上各种不同服务和操作系统的类型和版本。远程未授权攻击者能够利用这些敏感信息发起进一步的测试和攻击。]]></desc>
+                <solve><![CDATA[这本身不是一个安全漏洞，信息的收集只是为了提高扫描的准确率。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[该主机正在运行的是：Microsoft Windows]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>10.210.253.2</hostIp>
+        <startTime>2020-12-21 12:03:59</startTime>
+        <endTime>2020-12-21 12:27:13</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[3Com SuperStack II 或 Alteon 或 Alteon 或 CISCO ATA 或 CISCO IOS 12.3 或 Netopia Router 或 Netopia Router 或 SCO OpenServer 5 或 Vigor2600]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList>
+            <item>
+                <portValue>443</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 400 Bad Request]]></serverVersion>
+            </item>
+            <item>
+                <portValue>80</portValue>
+                <portType>tcp</portType>
+                <protocolName>www</protocolName>
+                <serverVersion><![CDATA[HTTP/1.1 301 Moved PermanentlyLocation: https://10.210.253.2/simple/view/login.htmlServer: O-C]]></serverVersion>
+            </item>
+        </portList>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-1999-00241</id>
+                <name><![CDATA[icmp 时间戳请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg/>
+                <desc><![CDATA[ICMP（Internet Control Message Protocol，Internet控制信息协议）为IP 堆栈发送简单的信息。由于ICMP过于简单，所以它对于网络的安全性有比较大的负面影响，攻击者可以利用ICMP进行网络扫描、拒绝服务（DoS）攻击和隧道攻击等各种危害网络安全的活动。最常用的ICMP应用就是通常被称为Ping的操作。攻击者可以利用ICMP协议来探测主机地址是否存活。远程主机响应一个ICMP时间戳请求，就允许攻击者知道你机器的时间，这可以帮助攻击者攻击那些基于主机时间的协议。]]></desc>
+                <solve><![CDATA[1 过滤掉ICMP时间戳请求（类型13)和向外的ICMP时间戳应答（类型14）。2 重新配置远程主机，使主机不应答ICMP时间戳请求。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2009-03428</id>
+                <name><![CDATA[检测远程Web服务是否支持STS]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>80</port>
+                <msg><![CDATA[相应的STS头信息行如下：Strict-Transport-Security: max-age=31536000; includeSubdomains]]></msg>
+                <desc><![CDATA[远程Web 服务采用严格安全传输(STS)访问控制方式，实施STS的目标是确保用户不随意降低他们浏览器的安全等级，对所有非加密的HTTP连接都自动跳转到HTTPS连接。浏览器要求所有cookies是安全的并在发生潜在安全问题事件时关闭相应的连接。 ]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-04829</id>
+                <name><![CDATA[超文本传输协议(HTTP)的信息]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>80</port>
+                <msg><![CDATA[协议版本  : HTTP/1.1SSL : noKeep-Alive : noHeaders :  Location: https://10.210.253.2/simple/view/login.html  Server: O-C-zyzx-1  Date: mon, 21 dec 2020 12:11:24 GMT  Pragma: no-cache  Cache-Control: no-store  Content-Type: text/html  Content-Length: 0  X-FRAME-OPTIONS: SAMEORIGIN  Strict-Transport-Security: max-age=31536000; includeSubdomains  X-XSS-Protection: 1; mode=block  X-Content-Type-Options: nosniff  Connection: Close  ]]></msg>
+                <desc><![CDATA[这个脚本主要获取了远程HTTP协议的信息：版本信息、HTTP是否保持活动状态、HTTP管道启动情况等等。这个脚本只是信息的获取并不涉及任何安全方面的问题。]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，信息的收集只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2000-00234</id>
+                <name><![CDATA[HTTP服务器类型和版本]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[WEB服务器测试]]></familyName>
+                <cve_id/>
+                <port>80</port>
+                <msg><![CDATA[远程的web服务器类型是:O-C-zyzx-1]]></msg>
+                <desc><![CDATA[    HTTP是超文本传输协议（Hyper Text Transfer Protocol）的英文简写。它是互联网上应用最为广泛的一种网络传输协议。用于传输超文本标记语言（HTML--Hyper Text Markup Language）写的文件，也就是我们通常说的网页。    HTTP服务器（WEB服务器）通过HTTP向客户端提供网页服务。    通过连接服务器来检测HTTP服务器的类型和版本。这些信息被称为服务器旗帜（Flag)。    服务器旗帜向攻击者提供他们想要攻击的系统的附加的信息，攻击者可以通过这些信息，更方便的找到服务器可能存在的漏洞和相应的攻击工具，间接的帮助攻击者的攻击。    在配置服务器的时候，版本号和类型应尽可能的去除。]]></desc>
+                <solve><![CDATA[1.最终解决方法:  用更通用的信息来标示服务器，不要让攻击者轻易的得到你的服务器的类型和版本。  *对于Apache服务器，确认删除了通用logos apache.gif。  *对于Win2000的IIS服务，按照如下步骤进行设置：1.管理工具－>Internet服务管理器－>停止Internet服务；2.删除%SystemRoot%\\system32\\dllcache\\w3scv.dll文件；3.用UltraEdit或类似的二进制编辑器将%SystemRoot%\\system32\\INETSRV\\W3svc.dll打开；4.查找Micro字样，把原来的Microsoft－IIS/5.0（后面的那个）改成你希望的值，如改为9.0；注意：如果您已经更改过该版本号，则该漏洞可以忽略。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>443</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2007-00401</id>
+                <name><![CDATA[智能识别目标端口上的服务]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port>80</port>
+                <msg><![CDATA[一个 web 服务 运行在该端口上.]]></msg>
+                <desc><![CDATA[ 这个脚本可以猜测出远程的端口运行的是什么服务，比如web服务不是开在80端口。它可以帮助漏洞扫描器更准确的扫描系统的安全]]></desc>
+                <solve><![CDATA[这本身并非一个漏洞，扫描的目的只是为了使扫描的结果更加准确。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-1999-00510</id>
+                <name><![CDATA[路由跟踪测试]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[以下是到主机10.210.253.2的traceroute结果: 192.168.58.11010.210.253.2]]></msg>
+                <desc><![CDATA[    Traceroute（路由跟踪）是一个常用的网络测试命令。用来检测主机到目标主机间的路由情况。Traceroute通过发送小的数据包到目的设备直到其返回，来测量其需要多长时间。可以帮助网络管理员确定网络结构和网络故障。    本测试尝试获得漏洞扫描器与该主机之间的路由。]]></desc>
+                <solve><![CDATA[漏洞扫描器需要这个信息来帮助扫描取得更准确的结果。但是这不是一个漏洞。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[漏洞扫描器不能确定这个主机上的操作系统. 它有可能是:3Com SuperStack II 或 Alteon 或 Alteon 或 CISCO ATA 或 CISCO IOS 12.3 或 Netopia Router 或 Netopia Router 或 SCO OpenServer 5 或 Vigor2600它的指纹有别于已知的特征 4 points.如果你知道这个操作系统的类型，并且方便的话请将以下的信息告诉我们（邮件:admin@testest.com）：:1:1:1:255:1:255:1:0:255:1:0:255:1:8:255:0:1:1:1:1:1:1:0:1:255:65535:M:N:N:N]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>192.168.209.28</hostIp>
+        <startTime>2020-12-21 12:06:48</startTime>
+        <endTime>2020-12-21 12:25:01</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[3Com 5500-EI switch OR 3Com SuperStack 3 Switch 4500]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList/>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-1999-00240</id>
+                <name><![CDATA[icmp netmask请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[防火墙测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg><![CDATA[该主机响应ICMP_MASKREQ查询，并送回它的网络掩码(255.255.255.240)。]]></msg>
+                <desc><![CDATA[远程主机响应一个ICMP_MASKREQ 查询并且发送给我们子网掩码。攻击者可以使用这条信息来了解别人的网络是怎样建立的，以及路由器是怎么配置的等等网络结构的信息，这将会帮助他绕过过滤器。]]></desc>
+                <solve><![CDATA[重新配置远程主机使之不响应此类请求，或者设置一条拒绝类型为17的ICMP的数据包的过滤条件。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-00404</id>
+                <name><![CDATA[识别目标系统或服务的类型]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0454]]></cve_id>
+                <port></port>
+                <msg><![CDATA[3Com 5500-EI switch OR 3Com SuperStack 3 Switch 4500]]></msg>
+                <desc><![CDATA[这个脚本通过不同方式来猜测/识别目标主机上各种不同服务和操作系统的类型和版本。远程未授权攻击者能够利用这些敏感信息发起进一步的测试和攻击。]]></desc>
+                <solve><![CDATA[这本身不是一个安全漏洞，信息的收集只是为了提高扫描的准确率。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[该主机正在运行的是：3Com 5500-EI switch OR 3Com SuperStack 3 Switch 4500]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+    <host>
+        <hostIp>192.168.209.29</hostIp>
+        <startTime>2020-12-21 12:08:51</startTime>
+        <endTime>2020-12-21 12:25:44</endTime>
+        <hostName/>
+        <hostDomain/>
+        <workGroup/>
+        <osName><![CDATA[NRG C7521n printer]]></osName>
+        <osVersion/>
+        <mac/>
+        <scanAuth>1</scanAuth>
+        <onlineFlag>1</onlineFlag>
+        <scanStatus>3</scanStatus>
+        <portList/>
+        <serverList/>
+        <shareList/>
+        <userList/>
+        <vulnList>
+            <item>
+                <id>NVE-01-1999-00240</id>
+                <name><![CDATA[icmp netmask请求]]></name>
+                <levelChs>低风险</levelChs>
+                <level>2</level>
+                <familyName><![CDATA[防火墙测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0524]]></cve_id>
+                <port></port>
+                <msg><![CDATA[该主机响应ICMP_MASKREQ查询，并送回它的网络掩码(255.255.255.240)。]]></msg>
+                <desc><![CDATA[远程主机响应一个ICMP_MASKREQ 查询并且发送给我们子网掩码。攻击者可以使用这条信息来了解别人的网络是怎样建立的，以及路由器是怎么配置的等等网络结构的信息，这将会帮助他绕过过滤器。]]></desc>
+                <solve><![CDATA[重新配置远程主机使之不响应此类请求，或者设置一条拒绝类型为17的ICMP的数据包的过滤条件。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-00404</id>
+                <name><![CDATA[识别目标系统或服务的类型]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id><![CDATA[CAN-1999-0454]]></cve_id>
+                <port></port>
+                <msg><![CDATA[NRG C7521n printer]]></msg>
+                <desc><![CDATA[这个脚本通过不同方式来猜测/识别目标主机上各种不同服务和操作系统的类型和版本。远程未授权攻击者能够利用这些敏感信息发起进一步的测试和攻击。]]></desc>
+                <solve><![CDATA[这本身不是一个安全漏洞，信息的收集只是为了提高扫描的准确率。]]></solve>
+            </item>
+            <item>
+                <id>NVE-01-2003-01423</id>
+                <name><![CDATA[操作系统识别]]></name>
+                <levelChs>信息</levelChs>
+                <level>1</level>
+                <familyName><![CDATA[信息获取测试]]></familyName>
+                <cve_id/>
+                <port></port>
+                <msg><![CDATA[该主机正在运行的是：NRG C7521n printer]]></msg>
+                <desc><![CDATA[黑客入侵的基本过程：1、判断入侵对象的操作系统2、扫描端口，判断开放了哪些服务3、根据操作系统和所开放的服务选择入侵方法，通常有“溢出”和“弱口令猜测”两种方法4、获得系统的最高权限5、安放后门、清除日志因此对目标操作系统的判断比较重要。本测试尝试使用多种方法识别远程操作系统。]]></desc>
+                <solve><![CDATA[本测试为扫描器提供有关被扫描主机的操作系统信息。这并不是一个漏洞。]]></solve>
+            </item>
+        </vulnList>
+    </host>
+</root>

@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
 
 class TestController extends Controller
@@ -37,6 +41,18 @@ class TestController extends Controller
         if($res->getStatusCode() !==200){
             Log::error('swoole_http请求错误:',['msg'=>$data]);
         }
+    }
+
+    public function DISROLE()
+    {
+        $arr=Arr::add (['name'=>'weims'],'age',1000);
+        dd($arr);
+        $user=new User();
+        $user->name='weims';
+        $user->email='isweims@gmail.com';
+        $user->password='55555';
+        $user->save ();
+
     }
 
 }
