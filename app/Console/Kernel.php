@@ -14,7 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //第一次提交
-        //
+        //第二次提交
     ];
 
     /**
